@@ -84,7 +84,6 @@ klib
 <h3>KHttpClient</h3>
 
 
-
 				Params params = new Params();
 		
 				// params.put(KEY, Value)
@@ -92,14 +91,9 @@ klib
 				params.put("password", "123456");
 		
 				// GET
-		
 				KHttpClient<Record> httpClient = new KHttpClient<Record>(this,
 						Record.class) {
-					@Override
-					protected void onStart() {
-						super.onStart();
-					}
-		
+						
 					@Override
 					protected void onSuccess(int statusCode, Record entity) {
 		
@@ -109,16 +103,6 @@ klib
 						super.onSuccess(statusCode, entity);
 		
 					}
-		
-					@Override
-					protected void onFailure(Throwable error, String content) {
-						super.onFailure(error, content);
-					}
-		
-					@Override
-					protected void onFinish() {
-						super.onFinish();
-					}
 				};
 		
 				// httpClient.setTimeout(20*1000);
@@ -127,7 +111,6 @@ klib
 				httpClient.get("http://www.www.com", params);
 		
 				// POST
-				
 				
 				params.put("file", new File("path"));
 				params.put("inputstream",

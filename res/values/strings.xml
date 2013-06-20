@@ -2,4 +2,6 @@
 
     <string name="app_name">klib</string>
 
+    <string name="_loading">正在卖力加载...</string>
+
 </resources>

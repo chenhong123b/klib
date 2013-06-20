@@ -1,1 +1,2 @@
+int string _loading 0x7f020001
 int string app_name 0x7f020000

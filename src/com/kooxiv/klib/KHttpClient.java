@@ -79,6 +79,16 @@ public class KHttpClient<T> {
 	public void post(String urlString, Params params) {
 
 		client.post(getUrlWithQueryString(urlString, params), handler);
+
+	}
+
+	public void setTimeout(int milliseconds) {
+		client.setTimeout(milliseconds);
+
+	}
+
+	public void setUserAgent(String userAgent) {
+		client.setUserAgent(userAgent);
 	}
 
 	public String getUrlWithQueryString(String url, Params params) {

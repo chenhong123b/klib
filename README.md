@@ -3,9 +3,6 @@ KLIB for Android
 
 数据、网络请求、图片处理
 
-				.android-async-http-1.4.3.jar
-				.sqlite-simple-2.4.jar
-				.universal-image-loader-1.8.4.jar
 				.gson-2.2.4.jar
 				.android-support-v4.jar
 

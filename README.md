@@ -124,8 +124,17 @@ KLIB for Android
 
 	
 
+<h3>KImageView</h3>
 
-
+			KImageView imageView=new KImageView(this);//or findview
+				imageView.setImageUrl(url, fallbackResource, loadingResource, new OnCompleteListener() {
+					
+					@Override
+					public void onComplete() {
+						// TODO Auto-generated method stub
+						
+					}
+				});
 
 
 
